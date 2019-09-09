@@ -99,6 +99,8 @@ eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github;
 export LANG=en_US.utf-8
 fpath=($HOME/.zsh-completions $fpath)
 
+PATH+=:~/.bin
+
 export CDPATH=~/Documents:~/Documents/tmpsh:~
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
