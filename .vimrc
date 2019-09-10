@@ -112,3 +112,4 @@ function! DirectoryHeaders()
 endfunction
 
 nnoremap <leader>l :execute DirectoryHeaders()<cr>
+let var=45
