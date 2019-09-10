@@ -12,7 +12,6 @@ else
 end
 
 source ~/.vimrc_plugins
-source ~/.vimrc_abbrev
 
 " configure expanding of tabs for various file types
 au BufRead,BufNewFile *.py set expandtab
@@ -21,11 +20,11 @@ au BufRead,BufNewFile *.h set noexpandtab
 au BufRead,BufNewFile Makefile* set noexpandtab
 
 
-let personnal_folder = $HOME . "/.vim/local/"
-let vim_files = split(globpath(personnal_folder, "*.vim"), "\n")
+let s:personnal_folder = $HOME . "/.vim/local/"
+let s:vim_files = split(globpath(s:personnal_folder, "*.vim"), "\n")
 
-for conf_file in vim_files
-    execute "source  " . conf_file
+for s:conf_file in s:vim_files
+    execute "source  " . s:conf_file
 endfor
 
 au BufNewFile *.sh call ShellShebang()
