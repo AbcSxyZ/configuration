@@ -2,6 +2,7 @@ set nocompatible              " be iMproved, required
 set nu
 set incsearch
 set hlsearch
+set foldmethod=indent
 
 filetype off                  " required
 set mouse=a
