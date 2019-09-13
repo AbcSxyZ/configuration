@@ -99,7 +99,13 @@ eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github;
 export LANG=en_US.utf-8
 fpath=($HOME/.zsh-completions $fpath)
 
-PATH+=:~/.bin
+if [ "$SHLVL" = 1 ]
+then
+     PATH=$PATH:~/.bin
+     PATH=$HOME/.brew/bin:$PATH
+     echo PATH is $PATH
+fi
+
 
 export CDPATH=~/Documents:~/Documents/tmpsh:~
 
