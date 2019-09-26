@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved, required
 set nu
+set relativenumber
 set incsearch
 set hlsearch
 set foldmethod=indent
