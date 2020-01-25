@@ -115,3 +115,14 @@ if [ -z "$TMUX" ]
 then
     tmux
 fi
+
+
+#LIST OF aliases
+
+#Aliases for linux
+if [ ! "$(uname)" = "Darwin" ]
+then
+    alias pbcopy='xclip -select clipboard'
+    alias docker='sudo docker'
+    alias docker-compose='sudo docker-compose'
+fi
