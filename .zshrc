@@ -95,7 +95,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github;
 export LANG=en_US.utf-8
 fpath=($HOME/.zsh-completions $fpath)
 
@@ -107,7 +106,7 @@ then
 fi
 
 
-export CDPATH=~/Documents:~/Documents/tmpsh:~
+export CDPATH=~/Documents:~
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
