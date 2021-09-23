@@ -95,7 +95,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github;
 export LANG=en_US.utf-8
 fpath=($HOME/.zsh-completions $fpath)
 
@@ -114,15 +113,4 @@ export CDPATH=~/Documents:~/Documents/tmpsh:~
 if [ -z "$TMUX" ]
 then
     tmux
-fi
-
-
-#LIST OF aliases
-
-#Aliases for linux
-if [ ! "$(uname)" = "Darwin" ]
-then
-    alias pbcopy='xclip -select clipboard'
-    alias docker='sudo docker'
-    alias docker-compose='sudo docker-compose'
 fi
