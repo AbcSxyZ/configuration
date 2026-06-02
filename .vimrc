@@ -115,3 +115,6 @@ endfunction
 
 nnoremap <leader>l :execute DirectoryHeaders()<cr>
 nnoremap <leader>q :call SwitchQuote()<cr>
+
+" Spelling mistake
+map <F1> :setlocal spell! spelllang=en,fr<CR>
