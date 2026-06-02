@@ -96,8 +96,8 @@ map <C-n> :noh<CR>
 imap <C-w> <C-o>:w<CR>
 
 " Copy paste to sytem clipboard
-vmap <C-c> "*y
-map <C-v> "*p
+vmap <C-c> "+y
+map <C-v> "+p
 
 colorscheme seattle
 
